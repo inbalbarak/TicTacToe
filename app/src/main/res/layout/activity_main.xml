@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TableLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -14,30 +13,28 @@
         android:layout_height="match_parent"
         android:background="#FFEB3B"
         android:gravity="center"
-        tools:context=".MainActivity">
-
+        tools:context=".MainActivity"
+        android:id="@+id/board">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:id="@+id/row1">
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="5dp"
                 android:background="#FFFFFF"
-                android:textSize="60dp" />
-
+                android:textSize="60sp"/>
             <Button
                 android:id="@+id/button2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginLeft="5dp"
                 android:background="#FFFFFF"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
             <Button
                 android:id="@+id/button3"
                 android:layout_width="100dp"
@@ -45,14 +42,13 @@
                 android:layout_marginLeft="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
+                android:textSize="60sp" />
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:id="@+id/row2">
             <Button
                 android:id="@+id/button4"
                 android:layout_width="100dp"
@@ -61,8 +57,7 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
             <Button
                 android:id="@+id/button5"
                 android:layout_width="100dp"
@@ -71,8 +66,7 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
             <Button
                 android:id="@+id/button6"
                 android:layout_width="100dp"
@@ -81,14 +75,13 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
+                android:textSize="60sp" />
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:id="@+id/row3">
             <Button
                 android:id="@+id/button7"
                 android:layout_width="100dp"
@@ -97,8 +90,7 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
             <Button
                 android:id="@+id/button8"
                 android:layout_width="100dp"
@@ -107,8 +99,7 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
             <Button
                 android:id="@+id/button9"
                 android:layout_width="100dp"
@@ -117,19 +108,23 @@
                 android:layout_marginTop="5dp"
                 android:background="#FFFFFF"
                 android:textColor="#000000"
-                android:textSize="60dp" />
-
+                android:textSize="60sp" />
         </TableRow>
-
-        <LinearLayout
-            android:layout_marginTop="15dp"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/resetBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-
+        <TextView
+            android:id="@+id/turnTurns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player X"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:visibility="invisible"
+            />
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
